@@ -1,0 +1,47 @@
+main
+{
+    width: 900px;
+    margin: 0 auto;
+}
+nav
+{
+    background-color:lightblue;
+}
+nav a
+{
+    color:black;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+}
+nav a:hover
+{
+
+   color:blue;
+}
+
+h1
+{
+    color:black;
+    text-shadow: 2px 2px gray;
+}
+footer
+{
+    text-align: center;
+    clear: both;
+    font-size:.8em;
+    padding-top: 10px;
+}
+footer img
+{
+    clear: both;
+    display: block;
+    margin: 0px auto;
+    
+}
+#text
+{
+    
+    float:right;
+    text-align:left;
+}
