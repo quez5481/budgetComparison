@@ -1,0 +1,40 @@
+data = read.csv(file.choose()) # READ "capstoneData.csv"
+head(data) # RETURNS COLUMN NAMES AND FIRST VALUES
+
+x = data$budget_per_student # BUDGET PER STUDENT 
+y = data$budget_per_inmate # BUDGET PER INMATE 
+n = length(y) # SAMPLE SIZE 
+time = 2007 : 2016 # EXPLANATORY VARIABLE TIME
+
+# LOCATION WHERE PDF WILL BE CREATED AND STORED
+pdf("C:/Users/BenRo/Fig1.pdf", height=4, width=6) 
+par(mfrow=c(1,2))
+
+# PLOT
+plot( time, x, type="l", col="blue", xlab="Year", ylab="Budget per individual", ylim=c(0,25) )
+  
+lines( time, y/n, lty=2, col="orange" )
+ 
+legend('bottom','groups',c("Education","Corrections"), lty=c(1,2), col=c('blue','orange'),bty ="2",cex=.6,box.lty=1)
+
+# RATIO
+r=y/x
+
+plot( time, r, type="l", col="black", xlab="Year",ylab="Ratio", ylim=c(0,12) )
+
+# MODEL THE LINEAR RELATIONSHIP BETWEEN time AND r
+fit = lm( r ~ time )
+
+# SUMMARY OUTPUT FOR THE LINEAR MODEL
+summary(fit) 
+
+# DRAW AN ESTIMATED LINE OF THE LINEAR MODEL
+abline( fit, lty=2, col="red" )
+
+# LINEAR MODEL LEGEND
+legend('bottom', 'groups', c("Obsderved Ratio", "Expected Linear Trend"), lty=c(1,2), col=c('black', 'red'), bty ="2", cex=.8, box.lty=1)
+        
+dev.off()
+
+# PREDICTION INTERVAL 2018 - 2023
+predict(fit, newdata=data.frame(time=2018:2023), interval="predict")
