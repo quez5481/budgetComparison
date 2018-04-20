@@ -1,0 +1,30 @@
+[20-Apr-2018 19:47:56 UTC] PHP Warning:  include(../Practice/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 24
+[20-Apr-2018 19:47:56 UTC] PHP Stack trace:
+[20-Apr-2018 19:47:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:47:56 UTC] PHP Warning:  include(): Failed opening '../Practice/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 24
+[20-Apr-2018 19:47:56 UTC] PHP Stack trace:
+[20-Apr-2018 19:47:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:47:56 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 26
+[20-Apr-2018 19:47:56 UTC] PHP Stack trace:
+[20-Apr-2018 19:47:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:48:51 UTC] PHP Warning:  include(../Practice/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 24
+[20-Apr-2018 19:48:51 UTC] PHP Stack trace:
+[20-Apr-2018 19:48:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:48:51 UTC] PHP Warning:  include(): Failed opening '../Practice/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 24
+[20-Apr-2018 19:48:51 UTC] PHP Stack trace:
+[20-Apr-2018 19:48:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:48:51 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 26
+[20-Apr-2018 19:48:51 UTC] PHP Stack trace:
+[20-Apr-2018 19:48:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:0
+[20-Apr-2018 19:50:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.products' doesn't exist' in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php(37): PDOStatement->execute()
+#1 /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php(91): displayAllProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 37
+[20-Apr-2018 19:50:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.products' doesn't exist' in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php(37): PDOStatement->execute()
+#1 /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php(91): displayAllProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/mathCapstone2018/webpage/admin.php on line 37

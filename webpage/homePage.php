@@ -1,3 +1,13 @@
+<?php
+    if (isset($_GET["msg"]) && $_GET["msg"] == 'failed')
+    {
+        echo "<strong>Wrong Username or Password</strong><br><br>";
+    }
+    if (isset($_GET["msg"]) && $_GET["msg"] == 'exit')
+    {
+        echo "<strong>Successful Logout</strong><br><br>";
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,6 +28,15 @@
             <a href="blank.php">Lipika Deka</a>
         </ul>
         
+        <form method="POST" action="logInProcess.php">
+            
+            Username: <input type="text" name="username"/> <br/>
+            Password: <input type="password" name="password"/> <br/>
+            
+            <input type="submit" name="submitForm" value="Login!" />
+            
+        </form>
+    
         
         <footer>
             <br/><br/>
