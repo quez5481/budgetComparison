@@ -23,24 +23,23 @@
     
     include 'dbConnection.php';
     
-    $conn = getDatabaseConnection("ottermart");
+    $conn = getDatabaseConnection("mathCapstone");
     
-    function displayAllProducts()
-    {
-        global $conn;
+    // function display()
+    // {
+    //     global $conn;
         
-        $sql = "SELECT *
-                FROM products";
+    //     $sql = "SSELECT * FROM projectData";
                 
                 
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+    //     $stmt = $conn->prepare($sql);
+    //     $stmt->execute();
+    //     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
         
-        // print_r($records);
+    //     // print_r($records);
         
-        return $records;
-    }
+    //     return $records;
+    // }
 
 ?>
 
@@ -61,7 +60,6 @@
             {
                 return confirm("Are you sure you want to delete it?");
             }
-            
         </script>
     </head>
     <body>
@@ -74,35 +72,35 @@
 
         <br />
         
-        <form action="addProduct.php">
-            <input type="submit" name="addproduct" value="Add Product"/>
-        </form>
+        <!--<form action="addProduct.php">-->
+        <!--    <input type="submit" name="addproduct" value="Add Product"/>-->
+        <!--</form>-->
         
         <form action="logout.php">
-            <input type="submit"  value="Logout"/>
+            <input type="submit" value="Logout"/>
         </form>
         
         <br /><br />
         
-        <strong> Products: </strong> <br />
+        <!--<strong> Products: </strong> <br />-->
         
         <?php 
         
-            $records=displayAllProducts();
+            // $records=display();
             
-            foreach($records as $record)
-            {
-                echo "<a href='updateProduct.php?productId=".$record['productId']."'>Update </a>";
-                // echo "<a href='deleteProduct.php?productId=".$record['productId']."'>Delete </a>";
+            // foreach($records as $record)
+            // {
+            //     echo "<a href='updateProduct.php?productId=".$record['productId']."'>Update </a>";
+            //     // echo "<a href='deleteProduct.php?productId=".$record['productId']."'>Delete </a>";
                 
-                echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-                echo "<input type='hidden' name='productId' value= " . $record['productId'] . " />";
-                echo "<input type='submit' value='Delete'>";
-                echo "</form>";
+            //     echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
+            //     echo "<input type='hidden' name='productId' value= " . $record['productId'] . " />";
+            //     echo "<input type='submit' value='Delete'>";
+            //     echo "</form>";
                 
-                echo $record['productName'];
-                echo '<br>';
-            }
+            //     echo $record['productName'];
+            //     echo '<br>';
+            // }
             
         ?>
         
@@ -118,7 +116,7 @@
             </div>
             
             <br/>
-            <img src="csumb_logo_150_86.jpg" alt"csumbLogo">
+            <img src="../images/csumb_logo_150_86.jpg" alt="csumbLogo">
         </footer>
         
         

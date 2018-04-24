@@ -5,6 +5,7 @@
         <link href="styles.css"type="text/css" rel="stylesheet" />
     </head>
     <body>
+        <h2>Ben Rosales</h2>
 
 
         <footer>
@@ -17,7 +18,7 @@
                 </div>
                 
                 <br/>
-                <img src="../images/csumb_logo_150_86.jpg" alt"csumbLogo">
+                <img src="../images/csumb_logo_150_86.jpg" alt="csumbLogo">
             </footer>
     </body>
 </html>
