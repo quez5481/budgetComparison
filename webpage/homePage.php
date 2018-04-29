@@ -17,6 +17,7 @@
     <body>
         <h1>Mathematics Capstone 2018: Comparing Budgets</h1>
         <h2>Contributors</h2>
+        
         <ul>
             <a href="collaborators/jr.php">Jessica Rosa</a>
             <a href="collaborators/br.php">Ben Rosales</a>
