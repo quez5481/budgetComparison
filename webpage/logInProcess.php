@@ -35,7 +35,7 @@
 
     if (empty($record))
     {
-        header("Location:homePage.php?msg=failed");
+        header("Location:logIn.php?msg=failed");
     } 
     else
     {

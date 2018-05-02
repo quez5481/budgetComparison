@@ -4,7 +4,7 @@
     
     if(!isset($_SESSION['adminName']))
     {
-        header("Location:homePage.php");
+        header("Location:logIn.php");
     }
     
     if (isset($_GET["msg"]) && $_GET["msg"] == 'added') 
@@ -48,12 +48,10 @@
     <head>
         <title> Admin Main Page </title>
         <link href="styles.css"type="text/css" rel="stylesheet" />
-        <style>
-            form 
-            {
-                display: inline;
-            }
-        </style>
+        
+        <?php
+            include 'style.php';
+        ?>
         
         <script>
             function confirmDelete() 
@@ -63,6 +61,9 @@
         </script>
     </head>
     <body>
+        <?php
+            include 'header.php';
+        ?>
 
 
         
@@ -103,23 +104,8 @@
             // }
             
         ?>
-        
-        
-        
-        <footer>
-            <br/><br/>
-            <div>
-                <hr>
-                Internet Programming. 2018&copy; Quezada <br/>
-                <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br/>
-                It is used for academic purposes only.
-            </div>
-            
-            <br/>
-            <img src="../images/csumb_logo_150_86.jpg" alt="csumbLogo">
-        </footer>
-        
-        
-        
+        <?php
+            include 'footer.php';
+        ?>
     </body>
 </html>

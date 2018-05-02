@@ -1,5 +1,5 @@
 <?php
     session_start();
     session_destroy();
-    header("Location: homePage.php?msg=exit");
+    header("Location: logIn.php?msg=exit");
 ?>

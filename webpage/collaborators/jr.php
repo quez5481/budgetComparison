@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Jessica Rosa</title>
         <link href="styles.css"type="text/css" rel="stylesheet" />
     </head>
     <body>
@@ -17,7 +17,7 @@
             </div>
             
             <br/>
-            <img src="../images/csumb_logo_150_86.jpg" alt="csumbLogo">
+            <img src="../../images/csumb_logo_150_86.jpg" alt="csumbLogo">
         </footer>
         
     </body>

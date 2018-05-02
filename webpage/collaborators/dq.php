@@ -18,7 +18,7 @@
             </div>
             
             <br/>
-            <img src="../images/csumb_logo_150_86.jpg" alt="csumbLogo">
+            <img src="../../images/csumb_logo_150_86.jpg" alt="csumbLogo">
         </footer>
 
     </body>
