@@ -25,21 +25,21 @@
     
     $conn = getDatabaseConnection("mathCapstone");
     
-    // function display()
-    // {
-    //     global $conn;
+    function display()
+    {
+        global $conn;
         
-    //     $sql = "SSELECT * FROM projectData";
+        $sql = "SELECT * FROM projectData";
                 
                 
-    //     $stmt = $conn->prepare($sql);
-    //     $stmt->execute();
-    //     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
         
-    //     // print_r($records);
+        print_r($records);
         
-    //     return $records;
-    // }
+        return $records;
+    }
 
 ?>
 
@@ -72,6 +72,11 @@
         <h3> Welcome <?=$_SESSION['adminName']?>! </h3>
 
         <br />
+        
+        <?php
+            display();
+        
+        ?>
         
         <!--<form action="addProduct.php">-->
         <!--    <input type="submit" name="addproduct" value="Add Product"/>-->

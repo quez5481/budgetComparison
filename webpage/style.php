@@ -56,6 +56,14 @@
         width:900px;
         height:400px;
     }
+    #evsc
+    {
+        display: block;
+        margin: 0px auto;
+        margin-left:120px;
+        width:600px;
+        height:553px;
+    }
     .equations
     {
         text-align:center;

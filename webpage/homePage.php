@@ -20,26 +20,28 @@
         <div class='container abstract'>
             <h2>Abstract</h2>
             <p>
-                After the economic crisis of 2006, the budget of education and 
-                the budget of corrections both plummeted alongside other budgets. 
-                Our focus will be on the period following 2007, where we will 
-                show how both budgets have recuperated respectively. The objective
-                of this study is to compare the trend of spending per student and 
-                trend of spending per inmate between 2007 and 2017. We recognize that
-                comparing inmates to students and the cost it takes to support each is 
-                like comparing apples and oranges. Meeting a student's needs for access 
-                to education is much less costly than housing and providing for an inmate. 
-                To that end we compared the ratio, budget per inmate over budget per student, 
-                rather than the budgets themselves.  We used a linear model to address 
-                our research objective, and we obtained statistical evidence to conclude
-                that spending per student has not received the same rate of growth as 
-                spending per inmate since the economic crisis of 2006. Over the last 
-                decade, every two and a half years, the ratio has increased by one on 
-                average. We project that the budget for corrections spending per inmate 
-                returned to its pre-financial crisis budget within a quarter of the time it took education.
+                After the economic crisis of 2006, the budget of education and the budget of corrections
+                both plummeted alongside other budgets. Our focus will be on the period following 2007, 
+                where we will show how both budgets have recuperated respectively. The objective of this 
+                study is to compare the trend of spending per student and trend of spending per inmate 
+                between 2007 and 2017. We recognize that comparing inmates to students and the cost it takes
+                to support each is like comparing apples and oranges. Meeting a student's needs for 
+                access to education is much less costly than housing and providing for an inmate. To that
+                end we compared the ratio, budget per inmate over budget per student, rather than the budgets
+                themselves.  We used a linear model to address our research objective.      
             </p>
+            <br>
+            <a href="http://money.cnn.com/infographic/economy/education-vs-prison-costs/"><img src="../images/img_1.jpg" id="evsc" alt="EvsC"></a>
+            <br>
+            <p>
+                The figure above illustrates each state's spending on education and corrections. 
+                California is ranked 6th in spending for corrections and is ranked 29th in spending 
+                for education. 
+            </p>
+            
         </div>  
         
+        <br><br>
         <div class='container results'>
             <h2>Results</h2>
             <img src="../images/figure_1_capstone_2018.jpg" id="fig1" alt="fig1">
@@ -92,11 +94,11 @@
                 would be 12.75. We expressed the degree of uncertainty for <span lang="latex">$\hat{Y}$</span> with the prediction 
                 interval of (9.75,15.75).
             </p>
-            
+              
         </div> 
             
     
-        
+        <br><br><br><br><br><br><br>
         <h2>Contributors</h2>
         <ul>
             <a href="collaborators/jr.php">Jessica Rosa</a>
