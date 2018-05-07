@@ -25,7 +25,7 @@
     
     $conn = getDatabaseConnection("mathCapstone");
     
-    function display()
+    function allData()
     {
         global $conn;
         
@@ -73,10 +73,39 @@
 
         <br />
         
-        <?php
-            display();
+        <h1 id="test"></h1>
         
-        ?>
+        <script>
+    
+            // $(document).ready(function()
+            // {
+            //     $.ajax({
+            //         type: "GET",
+            //         url: "api.php",
+            //         dataType: "json",
+            //         data: {},
+            //         success: function(data,status) 
+            //         {
+            //             //alert(data.breed);
+            //             //log.console(data.pictureURL);
+                       
+            //             $("#test").html("<h2>" + data.year +"</h2>");
+            //             // $('#petInfo').html("");
+            //             // $("#petInfo").append("Age: " + data.age + " years <br>");
+            //             // $("#petInfo").append(data.breed + "<br>");
+            //             // $("#petInfo").append(data.description + "<br>");
+            //             // $("#petInfo").append("<img src='img/" + data.pictureURL +"' width='150'>");
+            //         },
+            //         complete: function(data,status) 
+            //         { 
+            //           //optional, used for debugging purposes
+            //           //alert(status);
+            //         }
+            //     });//ajax
+            // }); //document ready
+            
+            
+        </script>
         
         <!--<form action="addProduct.php">-->
         <!--    <input type="submit" name="addproduct" value="Add Product"/>-->
