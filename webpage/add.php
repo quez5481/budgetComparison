@@ -13,7 +13,6 @@
     
     if(isset($_GET['submitRecord']))
     {
-        $id = $_GET['id'];
         $year = $_GET['year'];
         $student = $_GET['student'];
         $inmate = $_GET['inmate'];
@@ -23,16 +22,15 @@
         $budget_cor_ca_fed = $_GET['budget_cor_ca_fed'];
         
         $sql = "INSERT INTO projectData
-                ( `id`, `year`, `student`, `inmate`, `budget_educ_ca`, `budget_educ_ca_fed`, `budget_cor_ca`, `budget_cor_ca_fed') 
-                 VALUES ( :id, :year, :student, :inmate, :budget_educ_ca, :budget_educ_ca_fed, :budget_cor_ca, :budget_cor_ca_fed)";
+                (`year`, `student`, `inmate`, `budget_educ_ca`, `budget_educ_ca_fed`, `budget_cor_ca`, `budget_cor_ca_fed') 
+                 VALUES (:year, :student, :inmate, :budget_educ_ca, :budget_educ_ca_fed, :budget_cor_ca, :budget_cor_ca_fed)";
         
         $namedParameters = array();
-        $namedParameters[':id'] = $id;
         $namedParameters[':year'] = $year;
         $namedParameters[':student'] = $student;
         $namedParameters[':inmate'] = $inmate;
         $namedParameters[':budget_educ_ca'] = $budget_educ_ca;
-        $namedParameters[':budget_cor_ca_fed'] = $budget_educ_ca_fed;
+        $namedParameters[':budget_educ_ca_fed'] = $budget_educ_ca_fed;
         $namedParameters[':budget_cor_ca'] = $budget_cor_ca;
         $namedParameters[':budget_cor_ca_fed'] = $budget_cor_ca_fed;
         
@@ -60,8 +58,6 @@
         ?>
         <h1>Add a Record</h1>
         <form>
-            id:
-                <input type="text" name="id"><br>
             Year(Format: "x-x+1"):
                 <input type="text" name="year"><br>
             Student Count:
