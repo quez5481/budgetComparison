@@ -28,11 +28,11 @@
             }
             if(isset($_GET['q']))
             {
-                if($_GET['q'] == "student")
+                if($_GET['q'] == "'student'")
                 {
                     $sql .= "student";
                 }
-                else if($_GET['q'] == "inmate")
+                else if($_GET['q'] == "'inmate'")
                 {
                     $sql .= "inmate";
                 }
@@ -50,7 +50,7 @@
        
         $stmt = $conn->prepare($sql);
         $stmt->execute();
-        $records = $stmt->fetch(PDO::FETCH_ASSOC); 
+        $records = $stmt->fetch(); 
         print_r($records);
         echo $records;
     }

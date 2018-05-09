@@ -2,9 +2,10 @@
     
     
     session_start();
+    
     if(!isset( $_SESSION['adminName']))
     {
-      header("Location:index.php");
+      header("Location:LogIn.php");
     }
     
     include "dbConnection.php";
@@ -21,9 +22,9 @@
         $budget_cor_ca = $_GET['budget_cor_ca'];
         $budget_cor_ca_fed = $_GET['budget_cor_ca_fed'];
         
-        $sql = "INSERT INTO projectData
-                (`year`, `student`, `inmate`, `budget_educ_ca`, `budget_educ_ca_fed`, `budget_cor_ca`, `budget_cor_ca_fed') 
-                 VALUES (:year, :student, :inmate, :budget_educ_ca, :budget_educ_ca_fed, :budget_cor_ca, :budget_cor_ca_fed)";
+        $sql = "INSERT INTO `projectData` 
+                 (`id`, `year`, `student`, `inmate`, `budget_educ_ca`, `budget_educ_ca_fed`, `budget_education_total`, `budget_per_student`, `budget_cor_ca`, `budget_cor_ca_fed`, `budget_cor_total`, `budget_per_inmate`, `state_budget_student_ca`, `fed_budget_student`, `state_budget_inmates`, `fed_budget_inmate`) 
+                 VALUES (NULL, ':year', ':student', ':inmate', ':budget_educ_ca', 'budget_educ_ca_fed', NULL, NULL, 'budget_cor_ca', 'budget_cor_ca_fed', NULL, NULL, NULL, NULL, NULL, NULL)";
         
         $namedParameters = array();
         $namedParameters[':year'] = $year;

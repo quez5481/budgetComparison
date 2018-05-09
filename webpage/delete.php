@@ -1,5 +1,10 @@
 <?php
-
+    
+    if(!isset( $_SESSION['adminName']))
+    {
+      header("Location:LogIn.php");
+    }
+    
     include 'dbConnection.php';
     
     $connection = getDatabaseConnection("mathCapstone");
