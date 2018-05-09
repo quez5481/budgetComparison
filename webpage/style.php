@@ -49,6 +49,20 @@
         text-align:center;
         width:300px;
     }
+    .update, .report
+    {
+        text-align:center;
+        width:300px;
+    }
+    #admin, #logout
+    {
+        text-align:center;
+    }
+    .userForm
+    {
+        text-align:center;
+        width:300px;
+    }
     #fig1
     {
         display: block;
@@ -73,6 +87,18 @@
     {
         text-align:center;
         width:900px;
+    }
+    h1, h3, h5
+    {
+        color:black;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        text-shadow: none;
+    }
+    p
+    {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
     }
     ul 
     {

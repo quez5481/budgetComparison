@@ -37,7 +37,7 @@
             include 'header.php';
         ?>
         <!--LOGIN-->
-        <br><br><br><br><br><br>
+        <br><br><br><br>
         <h2>Admin Login</h2>
         <br>
         <div class='container login'>

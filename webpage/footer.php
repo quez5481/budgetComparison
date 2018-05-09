@@ -1,5 +1,7 @@
 <!--FOOTER-->
 <footer>
+    <br>
+    <a href="logIn.php">Admin Log in</a>
     <br/><br/>
     <div>
         <hr>
