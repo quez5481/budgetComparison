@@ -1,3 +1,10 @@
+<?php
+    if (isset($_GET["msg"]) && $_GET["msg"] == 'userAdded') 
+    {
+        echo "<strong>Subscribed!</strong><br><br>";
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

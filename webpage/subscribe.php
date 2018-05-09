@@ -17,7 +17,7 @@
         ?>
         <!--LOGIN-->
         <br><br><br><br>
-        <h2>Admin Login</h2>
+        <h2>Subscribe to our Newsletter for Updates</h2>
         <br>
         <div class='container login'>
             <form method="POST" action="subscribeProcess.php">

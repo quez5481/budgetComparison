@@ -19,6 +19,10 @@
     {
         echo "<strong>Item successfully deleted in database.</strong><br><br>";
     }
+    if (isset($_GET["msg"]) && $_GET["msg"] == 'failed') 
+    {
+        echo "<strong>Item failed to add to the database.</strong><br><br>";
+    }
     
     
     include 'dbConnection.php';

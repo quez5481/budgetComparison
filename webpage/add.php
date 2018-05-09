@@ -37,7 +37,7 @@
         
         $stmt = $conn->prepare($sql);
         $stmt->execute($namedParameters);
-        header("Location:admin.php?msg=added");
+        header("Location:admin.php?msg=failed");
         
     }
 
