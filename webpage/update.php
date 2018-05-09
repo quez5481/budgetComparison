@@ -76,13 +76,13 @@
                 Inmate Count:
                     <br><input type="text" value="<?=$data['inmate']?>" name="inmate"><br>
                 Education Budget CA:
-                    <input type="text" value="<?=$data['budget_educ_ca']?>" name="bc"><br>
+                    <input type="text" value="<?=$data['budget_educ_ca']?>" name="budget_educ_ca"><br>
                 Education Budget CA & Fed:
-                    <input type="text" value="<?=$data['budget_educ_ca_fed']?>" name="bcf"><br>
+                    <input type="text" value="<?=$data['budget_educ_ca_fed']?>" name="budget_educ_ca_fed"><br>
                 Corrections Budget CA:
-                    <input type="text" value="<?=$data['budget_cor_ca']?>" name="cc"><br>
+                    <input type="text" value="<?=$data['budget_cor_ca']?>" name="budget_cor_ca"><br>
                 Corrections Budget CA & Fed:
-                    <input type="text" value="<?=$data['budget_cor_ca_fed']?>" name="ccf"><br><br>
+                    <input type="text" value="<?=$data['budget_cor_ca_fed']?>" name="budget_cor_ca_fed"><br><br>
                 
                 <input type="submit" name="submitData" value="Update Record"><br>
             </form>
