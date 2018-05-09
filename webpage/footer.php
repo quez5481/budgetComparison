@@ -1,8 +1,9 @@
 <!--FOOTER-->
 <footer>
     <br>
+    <a href="subscribe.php">Subscribe to our newsletter for updates</a><br>
     <a href="logIn.php">Admin Log in</a>
-    <br/><br/>
+    <br>
     <div>
         <hr>
         Mathematics Capstone Spring 2018&copy; Quezada<br/>
