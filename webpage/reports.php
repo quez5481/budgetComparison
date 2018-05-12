@@ -28,11 +28,11 @@
             }
             if(isset($_GET['q']))
             {
-                if($_GET['q'] == "'student'")
+                if($_GET['q'] == "student")
                 {
                     $sql .= "student";
                 }
-                else if($_GET['q'] == "'inmate'")
+                else if($_GET['q'] == "inmate")
                 {
                     $sql .= "inmate";
                 }
@@ -53,6 +53,7 @@
         $records = $stmt->fetch(); 
         print_r($records);
         echo $records;
+        echo $sql;
     }
 ?>
 <!DOCTYPE html>
@@ -84,7 +85,7 @@
 	        	<input type="radio" name="r" value="AVG"/>Average<br />
              	<input type="radio" name="r" value="MAX"/>Maximum<br />
              	<input type="radio" name="r" value="MIN"/>Minimum
-				<br><BR>
+				<br><br>
 				    
 				<input type="radio" name="q" value="student"/>Student Count<br />
              	<input type="radio" name="q" value="inmate"/>Inmate Count<br />
@@ -99,8 +100,8 @@
 			
 			
 			<?php
-			 //   $reports = report();
-			 //   echo $reports;
+			    $reports = report();
+			    echo $reports;
 			?>
         
         <br><br><br><br><br><br>
